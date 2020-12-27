@@ -1,0 +1,6 @@
+framework module myPublicPod {
+  umbrella header "myPublicPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
