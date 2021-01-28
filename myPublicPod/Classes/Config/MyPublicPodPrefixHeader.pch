@@ -1,0 +1,12 @@
+//
+//  MyPublicPrefixHeader.h
+//  myPublicPod
+//
+//  Created by MacPro on 2021/1/28.
+//
+
+#ifndef MyPublicPrefixHeader_h
+#define MyPublicPrefixHeader_h
+
+
+#endif /* MyPublicPrefixHeader_h */

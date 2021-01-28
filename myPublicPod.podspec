@@ -28,16 +28,28 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/charhu/myPublicPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'myPublicPod/Classes/**/*'
+  s.source_files = 'myPublicPod/**/*.{h,pch,m}'
+  s.public_header_files = 'myPublicPod/**/*.h'
+  s.prefix_header_file = 'myPublicPod/Classes/Config/MyPublicPodPrefixHeader.pch'
+#  s.resources = ['myPublicPod/Classes/**/*.{xib,storyboard,plist,png,bundle,wm}',  'myPublicPod/Assets/**/*.{xcassets,gif,plist,bundle,wav,json,ttf}','myPublicPod/**/*.{xib,storyboard,plist,png,bundle,wm,gif,mp3,json}']
+
+#s.resources = ['myPublicPod/Classes/**/*.{xib,storyboard,plist,png,bundle,wm}','myPublicPod/Assets/**/*.{xcassets,gif,plist,bundle,wav,json,ttf}']
+
+  s.exclude_files = ['myPublicPod/Info.plist','myPublicPod/**/*.{xcassets,bundle}/**/*.png']
+
+  s.frameworks = 'UIKit', 'MapKit'
+  s.dependency 'XYPublicClasses'
+  s.dependency 'XYECommerce_Public'
+  s.dependency 'YYKit'
+  s.dependency 'Masonry'
+  s.dependency 'WMCommonTool'
+  s.dependency 'WMAutomaticStatistics'
+  s.dependency 'XYLibs'
+  s.dependency 'IQKeyboardManager'
   
- s.resource_bundles = {
-#   'myPublicPod' => ['myPublicPod/Assets/*.png']
-   'myPublicPod' => ['myPublicPod/Assets/file.bundle']
- }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
+
+
+
