@@ -40,14 +40,14 @@ TODO: Add long description of the pod here.
   s.exclude_files = ['myPublicPod/Info.plist','myPublicPod/**/*.{xcassets,bundle}/**/*.png']
 
   s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'XYPublicClasses'
-  s.dependency 'XYECommerce_Public'
-  s.dependency 'YYKit'
-  s.dependency 'Masonry'
-  s.dependency 'WMCommonTool'
-  s.dependency 'WMAutomaticStatistics'
-  s.dependency 'XYLibs'
-  s.dependency 'IQKeyboardManager'
+#  s.dependency 'XYPublicClasses'
+#  s.dependency 'XYECommerce_Public'
+#  s.dependency 'YYKit'
+#  s.dependency 'Masonry'
+#  s.dependency 'WMCommonTool'
+#  s.dependency 'WMAutomaticStatistics'
+#  s.dependency 'XYLibs'
+#  s.dependency 'IQKeyboardManager'
   
 end
 
